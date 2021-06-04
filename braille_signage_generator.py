@@ -7,13 +7,16 @@ text = "cadquery"
 # Braille dot geometry (do not change unless you understand the consequences)
 horizontal_interdot = 2.5
 vertical_interdot = 2.5
-horizontal_intercell = 6
-vertical_interline = 10
-dot_height = 0.5
-dot_diameter = 1.3
+horizontal_intercell = 7.6
+vertical_interline = 10.2
+dot_height = 0.9
+dot_diameter = 1.6
 
-base_thickness = 1.5
+# The base plate thickness
+base_thickness = 2.0
 
+# Make sure that only lowercase letters are processed
+text = text.lower()
 
 # Map from character to positions.
 # Based on https://en.wikipedia.org/wiki/Braille_Patterns
@@ -24,6 +27,7 @@ base_thickness = 1.5
 # 3  6
 # 7  8
 char_point_map = {
+    " ": "",
     "a": "1",
     "b": "1,2",
     "c": "1,4",
@@ -57,7 +61,7 @@ def get_plate_width(text):
     """
     Determines the height of the plate based on the number of characters.
     """
-    return (len(text) * horizontal_intercell * 1.4)
+    return (len(text) * (horizontal_interdot + horizontal_intercell))
 
 
 def get_plate_height(text):
