@@ -13,7 +13,7 @@ dot_height = 0.9
 dot_diameter = 1.6
 
 # The base plate thickness
-base_thickness = 2.0
+base_thickness = 1.5
 
 # Make sure that only lowercase letters are processed
 text = text.lower()
