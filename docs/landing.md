@@ -8,7 +8,7 @@ The braille signage generator is a script that generates 3D printable braille si
 
 This generator attempts to comply with the standards set forth in [American National Standard: Accessible and Usable Buildings and Facilities: 2003: Standard and Commentary](https://bellevuewa.gov/sites/default/files/media/pdf_document/codes_2009ICC_A117.1_read-only.pdf), chapter 7, section 703.4, table 703.4-3 for braille dimensions. These standards may not be compatible with the regulations in your region. Always consult local laws and regulations to determine if this signage will meet requirements.
 
-The [source for this design](https://github.com/7B-Things/braille-signage-generator) is fully open and hosted on GitHub. Contributions to improve the generator are welcome.
+This design is open hardware, and the [source](https://github.com/7B-Things/braille-signage-generator) needed to reproduce and modify it for your own use is hosted on GitHub. Contributions to improve the generator are welcome.
 
 ## Limitations
 
