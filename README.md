@@ -32,4 +32,4 @@ If there are any errors, or if there are improvements to be made, please open an
 ## Licenses
 
 * [Apache Software License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) - Software
-* [CERN-OHL-P](https://ohwr.org/cern_ohl_p_v2.txt) - Hardware
+* [CERN-OHL-P-2.0](https://ohwr.org/cern_ohl_p_v2.txt) - Hardware

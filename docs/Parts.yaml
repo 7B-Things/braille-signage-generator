@@ -1,0 +1,27 @@
+
+PETGFilament:
+    Name: PETG Filament
+    Description: >
+        Generic PETG filament can be used
+        as long as the quality meets a minimum
+        standard of acceptability.
+    Specs:
+        Diameter: 1.75 mm
+        Material: PETG
+    Suppliers:
+        eSun:
+            PartNo: 445
+            Link: https://www.esun3d.net/Products/PETG
+PLAFilament:
+    Name: PLA Filament
+    Description: >
+        Generic PLA filament can be used
+        as long as the quality meets a minimum
+        standard of acceptability.
+    Specs:
+        Diameter: 1.75 mm
+        Material: PLA
+    Suppliers:
+        eSun:
+            PartNo: 346
+            Link: https://www.esun3d.net/Products/P-L-A

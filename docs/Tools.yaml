@@ -1,0 +1,44 @@
+Printer:
+    Name: 3D Printer
+    Description: >
+        Any 3D printer that can achieve an appropriate level of
+        dimensional accuracy can be used, and nozzles with an
+        orifice size of 0.4 mm or smaller should be used. A 
+        Prusa i3 Mk2 with a 0.4 mm nozzle was used for sample
+        prints.
+    Specs:
+        Nozzle: <= 0.4 mm
+    Suppliers:
+        Prusa Printers:
+            PartNo: mk2s
+            Link: https://help.prusa3d.com/en/tag/mk2s/
+SlicerSoftware:
+    Name: Slicer Software
+    Description: >
+        Any slicer software should work, but PrusaSlicer was used
+        to print samples.
+    Specs:
+        Version: 2.3.1
+    Suppliers:
+        Prusa Printers:
+            PartNo: prusaslicer
+            Link: https://www.prusa3d.com/prusaslicer/
+FlushCutters:
+    Name: Flush Cutters
+    Description: >
+        These are designed to clip electronic part leads off close
+        to the circuit board, but work well for removing strings as
+        well. Side cuts will work as well, but are not as effective.
+    Suppliers:
+        McMasterCarr:
+            PartNo: flush-cutters
+            Link: https://www.mcmaster.com/flush-cutters/
+HeatGun:
+    Name: Heat Gun
+    Description: >
+        These can be used to apply heat to remove thing strings that
+        are sometimes produced on prints.
+    Suppliers:
+        McMasterCarr:
+            PartNo: heat-guns
+            Link: https://www.mcmaster.com/heat-guns/
