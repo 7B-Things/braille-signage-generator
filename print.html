@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Braille Signage Generator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="./static/style.css" rel="stylesheet">
+        <script type="text/javascript" src="./static/3d-viewer.js"></script>
+    
+</head>
+<body>
+<header class="site-header">
+    <div class="wrapper">
+        <div class=header-text>
+   
+    <a class="site-title" href="./">Braille Signage Generator</a>
+   
+    <p class="author">by 7B Industries</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Braille Signage Generator
+    </a>
+</li>
+<li class="not-active">
+    <a class="not-active" href="./landing_BOM.html">
+        Bill of Materials
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./generate.html">
+        Generate
+    </a>
+    </li>
+<li class="active">
+    <a class="active" href="./print.html">
+        Print
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./post_processing.html">
+        Post Processing (Optional)
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1>Print</h1>
+<p>In order to work better for 3D printing, the dimensions of each braille dot has been set to the maximum allowed. This can cause the dots to be oversized on 3D printers with insufficient dimensional accuracy. Printing with anything larger than a 0.4 nozzle will likely lead to print quality problems as well. The braille dots are very small compared to the resolution that most 3D printers are capable of printing to, and so finer detail settings must be used when slicing the software.</p>
+<h3>Parts</h3>
+<ul>
+<li>0.7 m of <a href="Parts/PETGFilament.html">PETG filament</a>    - PLA has been tested as well, and other filaments may work but have not been tested.</li>
+</ul>
+<h3>Tools</h3>
+<ul>
+<li>1 <a href="Tools/SlicerSoftware.html">slicer software</a> </li>
+<li>1 <a href="Tools/Printer.html">3D printer</a> </li>
+</ul>
+<h2 class="page-step" id="slice-the-braille-sign">Step 1: Slice the Braille Sign</h2>
+<ul>
+<li>Load the STL downloaded from CadHub.xyz into your choice of <a href="Tools/SlicerSoftware.html">slicer software</a>.</li>
+<li>Ensure that the braille plate is positioned so that the flat side will be printed on the bed of the 3D printer, with the dots on the top side.</li>
+</ul>
+<p><img alt="Braille sign on print bed in slicer software" src="images/braille_sign_generator_on_print_bed_in_slicer.png" title="" /></p>
+<ul>
+<li>Make sure that the layer height is set to 0.15 mm or as close to that as possible.</li>
+<li>Ensure that the appropriate material is set in the slicer (PETG if you are using the recommended material)</li>
+<li>Supports should be disabled as they are not needed.</li>
+<li>Any infill of 20% or higher should work.</li>
+<li>Printing with a brim/skirt is recommended, especially when printing in PLA, to make sure the plate stays flat on the print bed during printing.</li>
+</ul>
+<p><img alt="3D printer settings" src="images/braille_sign_generator_3d_printer_settings.png" title="" /></p>
+<h2 class="page-step" id="print-the-braille-sign">Step 2: Print the Braille Sign</h2>
+<ul>
+<li>Make sure that at least 0.7 meters of <a href="Parts/PETGFilament.html">PETG filament</a> is available for the print, more if more characters were used than the default "cadquery" text.</li>
+<li>Use the <a href="Tools/Printer.html">3D printer</a> to print the braille sign.</li>
+<li>Remove the braille sign from the print bed, taking care not to damage the braille dots in the process.</li>
+</ul>
+<p><img alt="Sample 3D printed braille sign" src="images/braille_sign_generator_printed_plate.png" title="" /></p>
+<p>Due to the close positioning and small size of the braille dots, stringing is possible and may require some post-processing to clean the dots up to an acceptable level. It may also be possible to reduce or eliminate stringing by adjusting the nozzle temperature and retract settings for your printer. If strings are observed on the print see the <a href="post_processing.html" title="">post-processing</a> instructions for information on how to clean the dots up.</p>
+<hr />
+<p><a href="generate.html">Previous page</a> | <a href="post_processing.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png">
+    <span class="info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2021 7B Industries</p>
+    <p class="license">Braille Signage Generator is released under <a href="license.html">CERN-OHL-P-2.0</a>.</p>
+
+    </div>
+</footer></body>
+</html>
