@@ -3,14 +3,14 @@
 
 # Post Processing (Optional)
 
-Before relying on these method to finish braille signs, be sure to experiment with 3D print settings including the following to try to reduce or remove strings.
+Before relying on these methods to finish braille signs, be sure that your filament free of excess moisture, and experiment with your 3D printer's settings including the following to try to reduce or remove stringing.
 
 * Nozzle temperature
 * Retraction distance
 * Retraction lift
 * Axis movement speed
 
-String removal can greatly increase the time it takes to produce a sign, and can lead to deformation of dots.
+String removal can greatly increase the time it takes to produce a sign, and can lead to deformation of dots. It is worth spending some time to try to dial in your 3D printer settings to avoid stringing.
 
 {{BOM}}
 
