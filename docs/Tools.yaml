@@ -23,6 +23,17 @@ SlicerSoftware:
         Prusa Printers:
             PartNo: prusaslicer
             Link: https://www.prusa3d.com/prusaslicer/
+Sandpaper:
+    Name: Sandpaper
+    Description: >
+        Fine grit sandpaper is used to remove roughness and
+        protrusions from finished braille dots.
+    Specs:
+        Grit: 220
+    Suppliers:
+        McMasterCarr:
+            PartNo: 4692A74
+            Link: https://www.mcmaster.com/4692A74/
 FlushCutters:
     Name: Flush Cutters
     Description: >

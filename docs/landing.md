@@ -4,6 +4,7 @@
 
 The braille signage generator is a script that generates 3D printable braille signage based on user-provided English text. This is a work in progress and may not be standards-compliant or completely correct yet. Regulations also vary by region, so please consult with local authorities to ensure that the dot geometry and spacing provided in this script meets requirements.
 
+![Finished braille sign](images/braille_sign_generator_finished_product.png)
 ![Braille generator example rendering](images/braille_signage_generator.png)
 
 This generator attempts to comply with the standards set forth in [American National Standard: Accessible and Usable Buildings and Facilities: 2003: Standard and Commentary](https://bellevuewa.gov/sites/default/files/media/pdf_document/codes_2009ICC_A117.1_read-only.pdf), chapter 7, section 703.4, table 703.4-3 for braille dimensions. These standards may not be compatible with the regulations in your region. Always consult local laws and regulations to determine if this signage will meet requirements.
