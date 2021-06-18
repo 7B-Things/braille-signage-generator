@@ -57,7 +57,7 @@
     </li>
 <li class="not-active">
     <a class="not-active" href="./post_processing.html">
-        Post Processing (Optional)
+        Post Processing
     </a>
     </li>
 
@@ -67,7 +67,11 @@
         <div class="wrapper">
     <h2>Introduction</h2>
 <p>The braille signage generator is a script that generates 3D printable braille signage based on user-provided English text. This is a work in progress and may not be standards-compliant or completely correct yet. Regulations also vary by region, so please consult with local authorities to ensure that the dot geometry and spacing provided in this script meets requirements.</p>
-<p><img alt="Braille generator example rendering" src="images/braille_signage_generator.png" title="" /></p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/braille_sign_generator_finished_product.png" alt="Finished braille sign" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/braille_signage_generator.png" alt="Braille generator example rendering" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/braille_sign_generator_finished_product.png" alt="Finished braille sign"/></div>
 <p>This generator attempts to comply with the standards set forth in <a href="https://bellevuewa.gov/sites/default/files/media/pdf_document/codes_2009ICC_A117.1_read-only.pdf" title="">American National Standard: Accessible and Usable Buildings and Facilities: 2003: Standard and Commentary</a>, chapter 7, section 703.4, table 703.4-3 for braille dimensions. These standards may not be compatible with the regulations in your region. Always consult local laws and regulations to determine if this signage will meet requirements.</p>
 <p>This design is open hardware, and the <a href="https://github.com/7B-Things/braille-signage-generator" title="">source</a> needed to reproduce and modify it for your own use is hosted on GitHub. Contributions to improve the generator are welcome.</p>
 <h2>Limitations</h2>
@@ -84,7 +88,7 @@
 <ul>
 <li><a href="generate.html" title="">Generate</a></li>
 <li><a href="print.html" title="">Print</a></li>
-<li><a href="post_processing.html" title="">Post Processing (Optional)</a></li>
+<li><a href="post_processing.html" title="">Post Processing</a></li>
 </ul>
 <hr />
 <p><a href="landing_BOM.html">Next page</a></p>
