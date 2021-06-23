@@ -1,0 +1,70 @@
+title: Braille Signage Generator
+description: Script that generates 3D printable braille signage based on user-provided
+  English text.
+intended-use: Individuals who want to create 3D printed braille signage/labels for those
+  with visual impairments and blindness.
+keywords:
+  - braille
+  - assistive technology
+  - signage
+  - labels
+  - AT
+  - sign
+  - accessibility
+project-link: https://7bindustries.com/static/braille-signage-generator/index.html
+image: https://7bindustries.com/static/braille-signage-generator/images/braille_sign_generator_finished_product.png
+made: true
+made-independently: false
+license:
+  hardware: CERN-OHL-P-2.0
+  documentation: CC-BY-SA-4.0
+  software: Apache-2.0
+licensor:
+  name: Jeremy Wright
+  affiliation: 7B Industries
+  email: jwright@7bindustries.com
+okh-manifest-version: 1.0.0
+date-created: 2021-06-23
+date-updated: 2021-06-23
+manifest-author:
+  name: Jeremy Wright
+  affiliation: 7B Industries
+  email: jwright@7bindustries.com
+manifest-language: en-US
+contact:
+  name: Jeremy Wright
+  affiliation: 7B Industries
+  email: jwright@7bindustries.com
+  social:
+    - platform: GitHub
+      user-handle: jmwright
+    - platform: GitLab
+      user-handle: jmwright
+    - platform: YouTube
+      user-handle: wrightjmf
+    - platform: Twitter
+      user-handle: wrightjmf
+contributors:
+  - name: Jeremy Wright
+    affiliation: 7B Industries
+    email: jwright@7bindustries.com
+version: "1.0"
+development-stage: prototype
+documentation-home: https://7bindustries.com/static/braille-signage-generator/index.html
+archive-download: https://github.com/7B-Things/braille-signage-generator/archive/refs/heads/main.zip
+design-files:
+  - path: https://github.com/7B-Things/braille-signage-generator/blob/main/braille_signage_generator.py
+    title: Generator Script
+documentation-language: en-US
+bom: https://7bindustries.com/static/braille-signage-generator/landing_BOM.html
+tool-list: https://7bindustries.com/static/braille-signage-generator/landing_BOM.html
+making-instructions:
+  - path: https://7bindustries.com/static/braille-signage-generator/generate.html
+    title: Customizing and Generating
+  - path: https://7bindustries.com/static/braille-signage-generator/print.html
+    title: Printing
+  - path: https://7bindustries.com/static/braille-signage-generator/post_processing.html
+    title: Post Processing
+software:
+  - path: https://github.com/7B-Things/braille-signage-generator/blob/main/braille_signage_generator.py
+    title: Generator Script
