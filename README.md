@@ -33,3 +33,4 @@ If there are any errors, or if there are improvements to be made, please open an
 
 * [Apache Software License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) - Software
 * [CERN-OHL-P-2.0](https://ohwr.org/cern_ohl_p_v2.txt) - Hardware
+* [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Documentation

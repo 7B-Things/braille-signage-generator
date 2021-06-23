@@ -25,7 +25,9 @@ License: CERN-OHL-P-2.0
 #PageBOMTitle: '##For this step you will need'
 
 #Uncomment below to override the project title
-#Title: 'My project'
+Title: 'Braille Signage Generator'
+
+RemoveLandingTitle: False
 
 #Uncomment below to set a custom Website root for static HTML builds
 #WebsiteRoot: '/path/'
