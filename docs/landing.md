@@ -11,6 +11,8 @@ This generator attempts to comply with the standards set forth in [American Nati
 
 This design is open hardware, and the [source](https://github.com/7B-Things/braille-signage-generator) needed to reproduce and modify it for your own use is hosted on GitHub. Contributions to improve the generator are welcome.
 
+All source for this project is [available on GitHub](https://github.com/7B-Things/braille-signage-generator). If you are making this project, you can interact with developers and other makers on the [7BHardware group](https://groups.io/g/7bhardware) on groups.io.
+
 ## Limitations
 
 The generator could be expanded to overcome these limitations in the future, but are current limitations nonetheless.
