@@ -1,7 +1,7 @@
-Name	Qty	Link
-slicer software	1	Tools/SlicerSoftware.md
-PETG filament	0.7 m	Parts/PETGFilament.md
-3D printer	1	Tools/Printer.md
-fine grit sandpaper	1 sheet	Tools/Sandpaper.md
-flush cutters	1	Tools/FlushCutters.md
-heat gun	1	Tools/HeatGun.md
+Name in documentation	Qty	Full Name	Supplier 1	Part No	Link
+3D printer	1	3D Printer	Prusa Printers	mk2s	https://help.prusa3d.com/en/tag/mk2s/
+PETG filament	0.7 m	PETG Filament	eSun	445	https://www.esun3d.net/Products/PETG
+fine grit sandpaper	1 sheet	Sandpaper	McMasterCarr	4692A74	https://www.mcmaster.com/4692A74/
+flush cutters	1	Flush Cutters	McMasterCarr	flush-cutters	https://www.mcmaster.com/flush-cutters/
+heat gun	1	Heat Gun	McMasterCarr	heat-guns	https://www.mcmaster.com/heat-guns/
+slicer software	1	Slicer Software	Prusa Printers	prusaslicer	https://www.prusa3d.com/prusaslicer/

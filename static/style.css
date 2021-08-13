@@ -71,35 +71,41 @@ img {
 }
 
 a {
-  text-decoration: none;
-}
-
-a:link, a:visited {
-  color: #8094d6;
+  text-decoration: underline;
+  color: #000000;
 }
 
 a:hover, a:active {
-  text-decoration: underline;
+    color: #363636;
 }
 
 a.missing:link,
 a.missing:visited,
 a.missing:active { color: #ca1212; text-decoration: none; }
 
+a.bom:link,
+a.bom:visited,
+a.bom:active { text-decoration: underline }
+
+li {margin-bottom: 3px;}
+
 table {
+  border: 1px solid lightgrey;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 16px;
-  font-family: sans-serif;
-  width: 100%;
+}
+
+th, td {
+  border: 1px solid lightgrey;
+  text-align: left;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
 }
 
 th {
-  background-color: #F1502F;
-  color: white;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  text-align:left;
+  background: rgb(231, 231, 231);
 }
 
 .site-header {
@@ -118,11 +124,8 @@ th {
   padding: 20px 0;
 }
 
-.site-title:link, .site-title:visited {
-  color: #424242;
-}
-
 .site-title {
+  color: #424242;
   font-size: 32px;
   font-weight: 400;
   line-height: 54px;
@@ -195,6 +198,10 @@ nav {
   color: white;
 }
 
+.nav-list li{
+  margin: 0;
+}
+
 .nav-list li.active{
   background-color: #ececec;
 }
@@ -209,13 +216,13 @@ nav {
 }
 
 .sub-nav-list{
-  font-weight: normal;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 
 .sub-nav-list a{
+  font-weight: normal;
   padding-left: 26px;
 }
 
@@ -253,7 +260,7 @@ nav {
 /**
  * Clearfix
  */
-.wrapper:after{
+.wrapper:after {
   clear: both;
   content: "";
   display: table;
@@ -341,4 +348,10 @@ nav {
   padding: 0;
   width: 70%;
   background: #aaa;
+}
+
+
+.katex img {
+	object-fit: fill;
+    padding: unset;
 }
