@@ -10,9 +10,7 @@
 <link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
 
     <link href="./static/style.css" rel="stylesheet">
-        <script type="text/javascript" src="./static/3d-viewer.js"></script>
-    
-</head>
+        </head>
 <body>
 <header class="site-header">
     <div class="wrapper">
@@ -65,17 +63,19 @@
             </nav>
         </div>
         <div class="wrapper">
-    <h1>Print</h1>
+    <h1 id="print">Print</h1>
 <p>In order to work better for 3D printing, the dimensions of each braille dot has been set to the maximum allowed. This can cause the dots to be oversized on 3D printers with insufficient dimensional accuracy. Printing with anything larger than a 0.4 nozzle will likely lead to print quality problems as well. The braille dots are very small compared to the resolution that most 3D printers are capable of printing to, and so finer detail settings must be used when slicing the software.</p>
-<h3>Parts</h3>
+<div class="pagebom">
+<h3 id="parts">Parts</h3>
 <ul>
 <li>0.7 m of <a Class="bom" href="Parts/PETGFilament.html">PETG filament</a>    -  - PLA has been tested as well, and other filaments may work but have not been tested.</li>
 </ul>
-<h3>Tools</h3>
+<h3 id="tools">Tools</h3>
 <ul>
 <li>1 <a Class="bom" href="Tools/Printer.html">3D printer</a> </li>
 <li>1 <a Class="bom" href="Tools/SlicerSoftware.html">slicer software</a> </li>
 </ul>
+</div>
 <h2 class="page-step" id="slice-the-braille-sign">Step 1: Slice the Braille Sign</h2>
 <ul>
 <li>Load the STL downloaded from CadHub.xyz into your choice of <a href="Tools/SlicerSoftware.html">slicer software</a>.</li>
@@ -108,7 +108,7 @@
     <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
     <span class="info">Documentation powered by GitBuilding</span>
 </a>
-    <p class="author">©2021 7B Industries</p>
+    <p class="author">©2022 7B Industries</p>
     <p class="license">Braille Signage Generator is released under <a href="license.html">CERN-OHL-P-2.0</a>.</p>
 
     </div>

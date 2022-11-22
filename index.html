@@ -10,9 +10,7 @@
 <link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
 
     <link href="./static/style.css" rel="stylesheet">
-        <script type="text/javascript" src="./static/3d-viewer.js"></script>
-    
-</head>
+        </head>
 <body>
 <header class="site-header">
     <div class="wrapper">
@@ -65,26 +63,26 @@
             </nav>
         </div>
         <div class="wrapper">
-    <h2>Introduction</h2>
+    <h2 id="introduction">Introduction</h2>
 <p>The braille signage generator is a script that generates 3D printable braille signage based on user-provided English text. This is a work in progress and may not be standards-compliant or completely correct yet. Regulations also vary by region, so please consult with local authorities to ensure that the dot geometry and spacing provided in this script meets requirements.</p>
 <div class="gallery-thumb">
     <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/braille_sign_generator_finished_product.png" alt="Finished braille sign" />
     <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/braille_signage_generator.png" alt="Braille generator example rendering" />
 </div>
 <div class="gallery-show"><img id="gallery-show0" src="images/braille_sign_generator_finished_product.png" alt="Finished braille sign"/></div>
-<p>This generator attempts to comply with the standards set forth in <a href="https://bellevuewa.gov/sites/default/files/media/pdf_document/codes_2009ICC_A117.1_read-only.pdf" title="">American National Standard: Accessible and Usable Buildings and Facilities: 2003: Standard and Commentary</a>, chapter 7, section 703.4, table 703.4-3 for braille dimensions. These standards may not be compatible with the regulations in your region. Always consult local laws and regulations to determine if this signage will meet requirements.</p>
-<p>This design is open hardware, and the <a href="https://github.com/7B-Things/braille-signage-generator" title="">source</a> needed to reproduce and modify it for your own use is hosted on GitHub. Contributions to improve the generator are welcome.</p>
-<p>All source for this project is <a href="https://github.com/7B-Things/braille-signage-generator" title="">available on GitHub</a>. If you are making this project, you can interact with developers and other makers on the <a href="https://groups.io/g/7bhardware" title="">7BHardware group</a> on groups.io.</p>
-<h2>Limitations</h2>
+<p>This generator attempts to comply with the standards set forth in <a href="https://bellevuewa.gov/sites/default/files/media/pdf_document/codes_2009ICC_A117.1_read-only.pdf" target="_blank" title="">American National Standard: Accessible and Usable Buildings and Facilities: 2003: Standard and Commentary</a>, chapter 7, section 703.4, table 703.4-3 for braille dimensions. These standards may not be compatible with the regulations in your region. Always consult local laws and regulations to determine if this signage will meet requirements.</p>
+<p>This design is open hardware, and the <a href="https://github.com/7B-Things/braille-signage-generator" target="_blank" title="">source</a> needed to reproduce and modify it for your own use is hosted on GitHub. Contributions to improve the generator are welcome.</p>
+<p>All source for this project is <a href="https://github.com/7B-Things/braille-signage-generator" target="_blank" title="">available on GitHub</a>. If you are making this project, you can interact with developers and other makers on the <a href="https://groups.io/g/7bhardware" target="_blank" title="">7BHardware group</a> on groups.io.</p>
+<h2 id="limitations">Limitations</h2>
 <p>The generator could be expanded to overcome these limitations in the future, but are current limitations nonetheless.</p>
 <ul>
 <li>Targets only a single United States braille standard.</li>
 <li>Supports only a single line of braille text.</li>
 <li>Only generates uncontracted (grade 1) braille.</li>
 </ul>
-<h2>Materials Required</h2>
+<h2 id="materials-required">Materials Required</h2>
 <p>If you intend of printing a braille sign, make sure that you have the tools and supplies listed in the <a href="landing_BOM.html">bill of materials</a> <a href="landing_BOM.csv">(csv)</a>.</p>
-<h2>Making A Braille Sign</h2>
+<h2 id="making-a-braille-sign">Making A Braille Sign</h2>
 <p>There are three high level steps to creating a braille sign, and separate docs for them are listed below. There is also an optional step for post-processing the 3D print to get the best quality. The first step is to generate an STL with custom braille text, and the second is to print that plate with settings that will result in a sign with acceptable quality.</p>
 <ul>
 <li><a href="generate.html" title="">Generate</a></li>
@@ -101,7 +99,7 @@
     <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
     <span class="info">Documentation powered by GitBuilding</span>
 </a>
-    <p class="author">©2021 7B Industries</p>
+    <p class="author">©2022 7B Industries</p>
     <p class="license">Braille Signage Generator is released under <a href="license.html">CERN-OHL-P-2.0</a>.</p>
 
     </div>
