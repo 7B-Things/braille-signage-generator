@@ -74,39 +74,52 @@ def get_plate_height(text):
             (max_len - 1) * horizontal_intercell)
 
 
-# Generate the braille plate
-plate = (cq.Workplane().rect(get_plate_width(text), get_plate_height(text) + vertical_interdot * 2.0, centered=False)
-                       .extrude(base_thickness))
+def generate(braille_text=None):
+    """
+    Does the work of generating the braille plate CadQuery model.
+    """
+    # If the user did not specify the text, use the global default
+    if braille_text == None:
+        braille_text = text
 
-# Add the dot points to the plate
-pnts = []
-i = 1
-offset = 0
-for char in text:
-    locs = char_point_map[char]
-    loc_list = locs.split(",")
+    # Generate the braille plate
+    plate = (cq.Workplane().rect(get_plate_width(braille_text), get_plate_height(braille_text) + vertical_interdot * 2.0, centered=False)
+                           .extrude(base_thickness))
 
-    for loc in loc_list:
-        if loc == "1":
-            pnts.append((horizontal_interdot * i + offset, vertical_interdot * 4))
-        elif loc == "2":
-            pnts.append((horizontal_interdot * i + offset, vertical_interdot * 3))
-        elif loc == "3":
-            pnts.append((horizontal_interdot * i + offset, vertical_interdot * 2))
-        elif loc == "7":
-            pnts.append((horizontal_interdot * i + offset, vertical_interdot * 1))
-        elif loc == "4":
-            pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 4))
-        elif loc == "5":
-            pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 3))
-        elif loc == "6":
-            pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 2))
-        elif loc == "8":
-            pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 1))
+    # Add the dot points to the plate
+    pnts = []
+    i = 1
+    offset = 0
+    for char in braille_text:
+        locs = char_point_map[char]
+        loc_list = locs.split(",")
 
-    offset += horizontal_intercell
-    i += 1
-    
-plate = plate.faces(">Z").workplane().pushPoints(pnts).circle(dot_diameter / 2.0).extrude(dot_height).faces(">Z").fillet(dot_diameter / 2.0 - 0.151)
+        for loc in loc_list:
+            if loc == "1":
+                pnts.append((horizontal_interdot * i + offset, vertical_interdot * 4))
+            elif loc == "2":
+                pnts.append((horizontal_interdot * i + offset, vertical_interdot * 3))
+            elif loc == "3":
+                pnts.append((horizontal_interdot * i + offset, vertical_interdot * 2))
+            elif loc == "7":
+                pnts.append((horizontal_interdot * i + offset, vertical_interdot * 1))
+            elif loc == "4":
+                pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 4))
+            elif loc == "5":
+                pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 3))
+            elif loc == "6":
+                pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 2))
+            elif loc == "8":
+                pnts.append((horizontal_interdot * i + horizontal_interdot + offset, vertical_interdot * 1))
 
-show_object(plate)
+        offset += horizontal_intercell
+        i += 1
+
+    plate = plate.faces(">Z").workplane().pushPoints(pnts).circle(dot_diameter / 2.0).extrude(dot_height).faces(">Z").fillet(dot_diameter / 2.0 - 0.151)
+
+    return plate
+
+# Create the plate and show it in CQ-editor (if we are executing it that way)
+if 'show_object' in globals():
+    plate = generate()
+    show_object(plate)
