@@ -1,7 +1,5 @@
 # braille-signage-generator
 
-[![Open On CadHub](https://img.shields.io/badge/View-Open%20On%20CadHub-ff69b4)](https://cadhub.xyz/dev-ide/cadQuery#fetch_text_v1=https://github.com/7B-Things/braille-signage-generator/blob/main/braille_signage_generator.py)
-
 ![Example Braille Sign With CadQuery Text](images/braille_signage_generator.png)
 Generated "CadQuery" Braille Sign
 
@@ -13,10 +11,6 @@ A CadQuery script ([braille_signage_generator.py](https://github.com/7B-Things/b
 The following are parameters that are designed to be changed by the end user. Nothing else in the script should be changed unless the user understands the original intent of the code in the script, and accepts that altering the script may produce unexpected and incorrect results.
 
 * `text` - The `text` string variable at the top of the script can be changed to set what braille characters are generated on the sign. Spaces can be added throughout the text string, and may be desired at the beginning and end of the text as a buffer between the braille and the edge of the plate. As an example, the braille output can be changed by doing something similar to `text = "cadquery"` to `text = "[your text here]"`.
-
-## Usage
-
-The fastest way to get started with this design is on the CadHub.xyz website. A [live version of this model](https://cadhub.xyz/dev-ide/cadQuery#fetch_text_v1=https://github.com/7B-Things/braille-signage-generator/blob/main/braille_signage_generator.py) can be loaded in your web browser and edited there. Once the `text` variable has been changed, click the _Render_ button to see an updated view. Once the generated braille is correct, the _Download STL_ button can be clicked to download an STL file that can be 3D printed.
 
 ## Local Execution and Development
 
