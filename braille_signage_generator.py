@@ -61,7 +61,7 @@ def get_plate_width(text):
     """
     Determines the height of the plate based on the number of characters.
     """
-    return (len(text) * (horizontal_interdot + horizontal_intercell))
+    return (len(text) * (horizontal_interdot + horizontal_intercell) - horizontal_interdot)
 
 
 def get_plate_height(text):
