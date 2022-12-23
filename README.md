@@ -1,3 +1,5 @@
+**PLEASE NOTE:** This repo has moved, and the one here may be archived or deleted at a later time. The new location is [here](https://codeberg.org/7BIndustries/braille-label-generator).
+
 # braille-signage-generator
 
 ![Example Braille Sign With CadQuery Text](images/braille_signage_generator.png)
